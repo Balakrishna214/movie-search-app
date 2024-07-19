@@ -1,0 +1,70 @@
+.movie-card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+     
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;  
+    background-color: #585c61;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  .movie-poster {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 8px;
+  }
+  
+  .movie-info {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .movie-title {
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+  }
+  
+  .info-item {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+  }
+  
+  .ratings {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .star-icon {
+    color: gold;
+    margin-right: 5px;
+  }
+  
