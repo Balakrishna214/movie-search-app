@@ -35,9 +35,10 @@ class App extends Component {
 
     try {
       const url = `https://openlibrary.org/search.json?q=${input}`;
+      console.log(url)
       const response = await fetch(url);
       const data = await response.json();
-
+      console.log(data)
       if (data.docs && data.docs.length > 0) {
         this.setState({ movies: data.docs ,apiStatus: apiStatusConstants.success,});
       } else {
